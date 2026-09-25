@@ -1,10 +1,10 @@
-const menuButton = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".site-nav");
+const menuButton = document.querySelector(".menu-button");
+const nav = document.querySelector(".primary-nav");
 
 if (menuButton && nav) {
   menuButton.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    menuButton.setAttribute("aria-expanded", String(isOpen));
+    const open = nav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(open));
   });
 
   nav.querySelectorAll("a").forEach((link) => {
@@ -15,6 +15,15 @@ if (menuButton && nav) {
   });
 }
 
+document.querySelectorAll(".faq-list details").forEach((item) => {
+  item.addEventListener("toggle", () => {
+    if (!item.open) return;
+    document.querySelectorAll(".faq-list details").forEach((other) => {
+      if (other !== item) other.open = false;
+    });
+  });
+});
+
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
 
@@ -24,16 +33,18 @@ if (form) {
     event.preventDefault();
 
     const data = new FormData(form);
-    const name = (data.get("name") || "").toString().trim();
-    const contact = (data.get("contact") || "").toString().trim();
-    const postcode = (data.get("postcode") || "").toString().trim();
-    const message = (data.get("message") || "").toString().trim();
+    const name = String(data.get("name") || "").trim();
+    const postcode = String(data.get("postcode") || "").trim();
+    const contact = String(data.get("contact") || "").trim();
+    const service = String(data.get("service") || "").trim();
+    const message = String(data.get("message") || "").trim();
 
-    const subject = encodeURIComponent(`Website enquiry from ${name || "customer"}`);
+    const subject = encodeURIComponent(`Website enquiry — ${service || "Electrical work"}`);
     const body = encodeURIComponent(
-      `Name: ${name}\nContact: ${contact}\nPostcode: ${postcode}\n\nJob details:\n${message}`
+      `Name: ${name}\nPostcode: ${postcode}\nPhone/email: ${contact}\nService: ${service}\n\nJob details:\n${message}`
     );
 
-    window.location.href = `mailto:hello@northfieldelectrical.co.uk?subject=${subject}&body=${body}`;
+    window.location.href =
+      `mailto:hello@northfieldelectrical.co.uk?subject=${subject}&body=${body}`;
   });
 }

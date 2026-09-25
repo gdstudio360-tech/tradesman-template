@@ -1,39 +1,57 @@
-# Tradesman Website Demo
+# Tradesman Website Template — V2
 
-A lightweight, responsive static website template for electricians and other trades.
+A premium-looking, lightweight static website template aimed at UK tradespeople.
 
-## Files
-- `index.html` – all page content and SEO metadata
-- `styles.css` – layout, mobile styling and theme
-- `script.js` – mobile navigation, year and demo contact form
+## Demo business
+The current content uses the fictional demo business **Northfield Electrical** in Ipswich & Suffolk.
 
-## Before using for a real client
-Search and replace the demo details:
+## Included
+- Responsive desktop/mobile layout
+- Sticky navigation
+- Strong hero / CTA section
+- Services
+- Simple customer journey
+- Project showcase
+- Reviews section
+- Service-area section
+- FAQ
+- Quote form
+- Click-to-call and WhatsApp links
+- LocalBusiness / Electrician structured data
+- No Google Fonts
+- No external JS libraries
+
+## Replace before using for a real client
+Search these demo details:
 - `Northfield Electrical`
-- `+44 7700 900123`
+- `07700 900123`
+- `+447700900123`
 - `hello@northfieldelectrical.co.uk`
 - `Ipswich`
 - `Suffolk`
 
 Also replace:
-- demo reviews with genuine reviews
-- project placeholders with real customer photos
-- service list with the client’s real services
-- Schema.org business details in the `<head>`
+- all demo reviews with genuine reviews
+- project artwork with real photos
+- service list with actual services
+- areas covered
+- structured data in `<head>`
+- availability wording
+- any claims such as insurance, memberships, qualifications or ratings with verified client facts
 
-## GitHub Pages
-Upload these files to a repository, then:
-Settings → Pages → Deploy from a branch → `main` / root.
+## GitHub Pages update
+Upload `index.html`, `styles.css`, `script.js` and `README.md` to the repository root.
 
-## Custom domain
-A client domain such as `smith-electrical.co.uk` can later be connected in:
-Settings → Pages → Custom domain.
+If files with the same names already exist, commit the replacements. GitHub Pages should redeploy automatically after the commit.
 
-## Contact form
-The current demo form opens the visitor's email application.
-For production we can connect:
+## Production contact form
+The included form opens the visitor's email program.
+
+For a commercial client, connect a proper form handler such as:
 - Formspree
 - Netlify Forms
-- a custom backend/API
+- Cloudflare Worker / Pages Functions
+- a custom backend
 
-No Google Fonts or external JavaScript libraries are used.
+## Important
+This is a demo template. The yellow **DEMO WEBSITE** ribbon is deliberate. Remove it only after replacing the fictional business content with a real client's verified details.
