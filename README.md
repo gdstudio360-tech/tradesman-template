@@ -44,10 +44,13 @@ Upload `index.html`, `styles.css`, `script.js` and `README.md` to the repository
 
 If files with the same names already exist, commit the replacements. GitHub Pages should redeploy automatically after the commit.
 
-## Production contact form
-The included form opens the visitor's email program.
+## Demo contact behaviour
+This public demo deliberately does **not** send enquiries, make calls, open WhatsApp or launch an email client.
 
-For a commercial client, connect a proper form handler such as:
+Call / WhatsApp / Email actions and the quote form display a clear demo modal instead.
+The form validates the fields locally, then confirms that no personal details were transmitted or stored.
+
+For a real client, replace the demo contact behaviour with verified client details and a real form handler such as:
 - Formspree
 - Netlify Forms
 - Cloudflare Worker / Pages Functions
@@ -55,3 +58,16 @@ For a commercial client, connect a proper form handler such as:
 
 ## Important
 This is a demo template. The yellow **DEMO WEBSITE** ribbon is deliberate. Remove it only after replacing the fictional business content with a real client's verified details.
+
+
+## V3 — Safe public demo
+
+Changes:
+- marked the page `noindex,nofollow` so the fictional electrician is not presented to search engines as a real local business
+- removed fictional Electrician structured data
+- changed title/meta text to identify the site as a demo
+- disabled fake phone, WhatsApp and email actions
+- removed the old `mailto:` quote submission
+- added an accessible demo modal explaining that no enquiry was sent
+- the quote form now validates locally and sends/stores nothing
+- added a direct CTA from the demo to the GD TradeWeb sales website

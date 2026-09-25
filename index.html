@@ -3,38 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Northfield Electrical | Electrician in Ipswich & Suffolk</title>
-  <meta name="description" content="Reliable electrician serving Ipswich and Suffolk. Fault finding, consumer units, lighting, sockets, landlord work and small commercial jobs.">
+  <title>Northfield Electrical — Demo Website | GD TradeWeb</title>
+  <meta name="description" content="Fictional electrician website demo created by GD TradeWeb to demonstrate a professional UK trades website.">
   <meta name="theme-color" content="#0a1220">
+  <meta name="robots" content="noindex,nofollow">
 
-  <meta property="og:title" content="Northfield Electrical | Ipswich & Suffolk">
-  <meta property="og:description" content="Straightforward electrical work, clear quotations and tidy workmanship.">
+  <meta property="og:title" content="Northfield Electrical — Demo Website">
+  <meta property="og:description" content="Fictional trades website demo created by GD TradeWeb.">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="styles.css">
-
-  <!-- DEMO structured data. Replace all details with a real client's information before launch. -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Electrician",
-    "name": "Northfield Electrical",
-    "description": "Demo electrician website for Ipswich and Suffolk.",
-    "telephone": "+44 7700 900123",
-    "email": "hello@northfieldelectrical.co.uk",
-    "areaServed": ["Ipswich", "Kesgrave", "Martlesham", "Woodbridge", "Felixstowe", "Suffolk"],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ipswich",
-      "addressRegion": "Suffolk",
-      "addressCountry": "GB"
-    }
-  }
-  </script>
 </head>
 
 <body>
-  <div class="demo-ribbon">DEMO WEBSITE</div>
+  <a class="demo-ribbon" href="https://gdstudio360-tech.github.io/websites-for-tradesmen/" target="_blank" rel="noopener">DEMO WEBSITE • GD TRADEWEB</a>
 
   <header class="site-header" id="top">
     <div class="container nav">
@@ -82,8 +64,8 @@
 
           <div class="hero-actions">
             <a class="button button-yellow" href="#quote">Get a free quote</a>
-            <a class="button button-dark-outline" href="tel:+447700900123">
-              <span class="button-icon">☎</span> 07700 900123
+            <a class="button button-dark-outline demo-contact-trigger" href="#quote">
+              <span class="button-icon">☎</span> Demo call button
             </a>
           </div>
 
@@ -387,30 +369,30 @@
     <section class="quote-section" id="quote">
       <div class="container quote-grid">
         <div class="quote-copy">
-          <p class="kicker">GET A QUOTE</p>
-          <h2>Got a job in mind?<br>Send the details.</h2>
+          <p class="kicker">DEMO QUOTE JOURNEY</p>
+          <h2>See how a customer<br>would send the details.</h2>
           <p>
-            Add your postcode, a short description and, where possible, a few photos.
-            That gives the electrician enough information to respond usefully.
+            This section demonstrates the customer enquiry journey. Northfield Electrical is fictional,
+            so no real call, WhatsApp message or email will be sent from this demo.
           </p>
 
           <div class="contact-links">
-            <a href="tel:+447700900123">
-              <span>☎</span><div><small>CALL</small><strong>07700 900123</strong></div>
+            <a class="demo-contact-trigger" href="#quote">
+              <span>☎</span><div><small>DEMO CALL</small><strong>See how click-to-call would work</strong></div>
             </a>
-            <a href="https://wa.me/447700900123?text=Hi%20Northfield%20Electrical%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener">
-              <span>◉</span><div><small>WHATSAPP</small><strong>Send photos & message</strong></div>
+            <a class="demo-contact-trigger" href="#quote">
+              <span>◉</span><div><small>DEMO WHATSAPP</small><strong>See how WhatsApp contact would work</strong></div>
             </a>
-            <a href="mailto:hello@northfieldelectrical.co.uk">
-              <span>✉</span><div><small>EMAIL</small><strong>hello@northfieldelectrical.co.uk</strong></div>
+            <a class="demo-contact-trigger" href="#quote">
+              <span>✉</span><div><small>DEMO EMAIL</small><strong>See how email contact would work</strong></div>
             </a>
           </div>
         </div>
 
         <form class="quote-form" id="quote-form">
           <div class="form-head">
-            <span>QUICK ENQUIRY</span>
-            <strong>Tell us about the job</strong>
+            <span>DEMO ENQUIRY FORM</span>
+            <strong>Try the customer journey</strong>
           </div>
 
           <div class="form-two">
@@ -434,8 +416,9 @@
 
           <label>Job details<textarea name="message" rows="5" required placeholder="Briefly describe the job..."></textarea></label>
 
-          <button class="button button-yellow button-full" type="submit">Send enquiry <span>→</span></button>
-          <p class="form-note">Demo form currently opens the visitor’s email app. For a real client, connect a form service or backend.</p>
+          <button class="button button-yellow button-full" type="submit">Try demo enquiry <span>→</span></button>
+          <div class="demo-form-status" id="demo-form-status" role="status" aria-live="polite"></div>
+          <p class="form-note">Demo only — this form does not send your details anywhere.</p>
         </form>
       </div>
     </section>
@@ -454,13 +437,32 @@
     </div>
     <div class="container footer-bottom">
       <span>© <span id="year"></span> Northfield Electrical</span>
-      <span>Replace demo content before commercial launch</span>
+      <span>Fictional business • Demonstration only</span>
     </div>
   </footer>
 
   <div class="mobile-contact">
-    <a href="tel:+447700900123">Call</a>
-    <a class="mobile-primary" href="https://wa.me/447700900123?text=Hi%20Northfield%20Electrical%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener">WhatsApp</a>
+    <a class="demo-contact-trigger" href="#quote">Demo Call</a>
+    <a class="mobile-primary demo-contact-trigger" href="#quote">Demo WhatsApp</a>
+  </div>
+
+
+  <div class="demo-modal" id="demo-modal" hidden>
+    <div class="demo-modal-backdrop" data-demo-close></div>
+    <div class="demo-modal-card" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title">
+      <button class="demo-modal-close" type="button" aria-label="Close demo message" data-demo-close>×</button>
+      <span class="demo-modal-badge">DEMONSTRATION ONLY</span>
+      <h2 id="demo-modal-title">No real enquiry was sent.</h2>
+      <p id="demo-modal-copy">
+        Northfield Electrical is a fictional business created to demonstrate how a trades website can work for customers.
+      </p>
+      <div class="demo-modal-actions">
+        <a class="button button-yellow" href="https://gdstudio360-tech.github.io/websites-for-tradesmen/" target="_blank" rel="noopener">
+          Get a website like this →
+        </a>
+        <button class="button button-dark demo-modal-secondary" type="button" data-demo-close>Continue demo</button>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
