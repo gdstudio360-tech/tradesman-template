@@ -1337,3 +1337,122 @@ body{
   .starter-photo-feature figcaption{padding:28px 24px 30px}
   .starter-photo-media,.starter-photo-media img{min-height:245px}
 }
+
+
+/* STARTER SERVICE PHOTOS v7 */
+
+.services-grid{
+  gap:18px;
+  border:0;
+}
+
+.service{
+  min-height:390px;
+  padding:0 27px 27px;
+  overflow:hidden;
+  border:1px solid rgba(20,80,90,.11);
+  border-radius:20px;
+  background:rgba(248,252,252,.82);
+  box-shadow:0 16px 34px rgba(9,35,45,.06);
+}
+
+.service-photo{
+  position:relative;
+  height:180px;
+  margin:0 -27px 28px;
+  overflow:hidden;
+  background:#d8e8ea;
+}
+
+.service-photo img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .75s cubic-bezier(.22,1,.36,1);
+}
+
+.service:hover .service-photo img{
+  transform:scale(1.055);
+}
+
+.service-photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5,25,32,.02),
+      rgba(5,25,32,.04) 55%,
+      rgba(5,25,32,.18) 100%
+    );
+}
+
+.service-number{
+  z-index:5;
+  right:16px;
+  top:14px;
+  padding:5px 8px;
+  border-radius:999px;
+  color:#fff;
+  background:rgba(5,25,32,.62);
+  backdrop-filter:blur(8px);
+}
+
+.service-symbol{
+  position:absolute;
+  z-index:5;
+  left:24px;
+  top:151px;
+  width:48px;
+  height:48px;
+  margin:0;
+  border:4px solid #edf6f7;
+  border-radius:13px;
+  background:#fff;
+  color:#139c97;
+  box-shadow:0 8px 20px rgba(5,35,45,.12);
+}
+
+.service h3{
+  margin:14px 0 9px;
+}
+
+.featured-service{
+  background:linear-gradient(145deg,#081925,#0b3037)!important;
+}
+
+.featured-service .service-photo::after{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(4,15,24,.02),
+      rgba(4,15,24,.12) 50%,
+      rgba(4,15,24,.50) 100%
+    );
+}
+
+.featured-service .service-symbol{
+  border-color:#0c2730;
+  background:#34d0c8;
+  color:#072027;
+}
+
+.featured-service h3{
+  color:#fff;
+}
+
+@media(max-width:680px){
+  .service{
+    min-height:360px;
+  }
+
+  .service-photo{
+    height:165px;
+  }
+
+  .service-symbol{
+    top:137px;
+  }
+}
