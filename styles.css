@@ -698,7 +698,7 @@ body.demo-modal-open{
 /* Less empty space and stronger service cards */
 #services{
   padding-top:72px;
-  padding-bottom:82px;
+  padding-bottom:54px;
 }
 .services-grid{
   gap:14px;
