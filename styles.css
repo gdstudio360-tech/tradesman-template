@@ -1456,3 +1456,26 @@ body{
     top:137px;
   }
 }
+
+
+/* HERO PLUMBER PHOTO v8 */
+
+.hero-photo-img{
+  object-position:center 48%;
+  filter:saturate(.94) contrast(1.03);
+}
+
+.hero-photo-overlay{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5,18,27,.02) 0%,
+      rgba(5,18,27,.10) 48%,
+      rgba(5,18,27,.72) 100%
+    );
+}
+
+.plumbing-visual-card:hover .hero-photo-img{
+  transform:scale(1.055);
+}
+
