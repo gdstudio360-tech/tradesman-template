@@ -1,48 +1,35 @@
 # GD TradeWeb — Starter Package Demo
 
-One-page website demonstration for the GD TradeWeb Starter package.
+A one-page Starter package demo for a fictional UK plumbing business.
 
 ## Demo business
 
-**Northfield Electrical** is a fictional electrician used only to demonstrate the layout.
+**Northfield Plumbing** — fictional business for demonstration purposes only.
 
-## Starter package example
-
-This demo is intentionally simpler than the Business package.
-
-It demonstrates:
+## Starter package shown
 
 - 1-page website
 - Up to 6 core sections
-- Mobile responsive layout
-- Services section
-- Call & WhatsApp buttons
-- Contact / quote section
+- Mobile responsive
+- Core services
+- Call & WhatsApp journey
+- Contact / quote form
 - Basic local-business presentation
 - Clear calls to action
 
-## Deliberately not included
+## Not included
 
-These are demonstrated in the Business package instead:
+Business-level features such as:
 
 - Project gallery
 - Reviews section
 - Dedicated service-area content
 - FAQ section
-- Larger multi-page structure
+- Multi-page service structure
 
 ## Demo safety
 
-Northfield Electrical is fictional.
-
-The public demo:
-
-- is marked `noindex,nofollow`
-- does not send form data
-- does not make real calls
-- does not open a real WhatsApp conversation
-- does not send email
-- uses a demo modal to explain contact actions
+This public demo does not send or store form information and does not connect to a real business.
 
 GD TradeWeb:
 https://gdtradeweb.co.uk/

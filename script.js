@@ -64,7 +64,7 @@ document.querySelectorAll(".demo-contact-trigger").forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
     openDemoModal(
-      "This is a fictional electrician website, so the call, WhatsApp and email actions are disabled. On a real client website these buttons would connect directly to the business."
+      "This is a fictional plumber website, so the call, WhatsApp and email actions are disabled. On a real client website these buttons would connect directly to the business."
     );
   });
 });

@@ -505,3 +505,517 @@ body.demo-modal-open{
     display:grid;
   }
 }
+
+
+/* ======================================================
+   STARTER PLUMBER DEMO — VISUAL POLISH
+   ====================================================== */
+
+:root{
+  --yellow:#33d0c8;
+  --yellow-deep:#139d99;
+}
+
+/* Cleaner, calmer header */
+.site-header{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(16px);
+}
+.brand-icon{
+  background:linear-gradient(145deg,#3be0d6,#1aa8a3);
+  color:#071826;
+}
+.brand-icon svg{
+  fill:currentColor;
+}
+
+/* No diagonal demo sticker */
+.demo-ribbon{
+  display:none!important;
+}
+
+.starter-badge{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin-bottom:15px;
+  padding:7px 10px;
+  border:1px solid rgba(65,221,211,.25);
+  border-radius:999px;
+  background:rgba(51,208,200,.08);
+  color:#70e4de;
+  font-size:.61rem;
+  font-weight:950;
+  letter-spacing:.12em;
+}
+
+/* Stronger plumbing hero */
+.hero{
+  background:
+    radial-gradient(circle at 82% 24%,rgba(51,208,200,.17),transparent 25%),
+    radial-gradient(circle at 16% 82%,rgba(31,130,167,.14),transparent 27%),
+    #081525;
+}
+.hero-grid{
+  padding:82px 0 80px;
+}
+.hero h1 em{
+  color:#54ded7;
+}
+.availability span{
+  background:#3ad5cd;
+  box-shadow:0 0 0 5px rgba(51,208,200,.10);
+}
+
+.button-yellow{
+  background:#39d4cc;
+  color:#07151e;
+}
+.button-yellow:hover{
+  background:#63e2dc;
+}
+
+/* Plumbing illustration */
+.plumbing-visual-card{
+  border-color:rgba(80,224,216,.18);
+}
+.plumbing-scene{
+  position:relative;
+  min-height:390px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 72% 30%,rgba(68,223,214,.18),transparent 25%),
+    linear-gradient(145deg,#142d3b,#091622 70%);
+}
+.pipe{
+  position:absolute;
+  background:linear-gradient(180deg,#cdd8de,#7d919c);
+  border:1px solid rgba(255,255,255,.35);
+  box-shadow:0 14px 28px rgba(0,0,0,.22);
+}
+.pipe-main{
+  width:62%;
+  height:34px;
+  left:16%;
+  top:44%;
+  border-radius:18px;
+}
+.pipe-drop{
+  width:34px;
+  height:36%;
+  left:62%;
+  top:44%;
+  border-radius:0 0 18px 18px;
+}
+.pipe-side{
+  width:32%;
+  height:34px;
+  right:-5%;
+  top:64%;
+  border-radius:18px;
+}
+.pipe-joint{
+  position:absolute;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:linear-gradient(145deg,#d9e2e6,#778d99);
+  border:7px solid #aab8c0;
+  box-shadow:0 16px 30px rgba(0,0,0,.25);
+}
+.joint-one{left:58%;top:38%}
+.joint-two{right:24%;top:57%}
+
+.valve{
+  position:absolute;
+  left:24%;
+  top:31%;
+  width:104px;
+  height:104px;
+  border:10px solid #35c9c2;
+  border-radius:50%;
+  box-shadow:0 0 35px rgba(51,208,200,.16);
+}
+.valve span{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:72%;
+  height:8px;
+  border-radius:10px;
+  background:#35c9c2;
+  transform-origin:center;
+}
+.valve span:nth-child(1){transform:translate(-50%,-50%) rotate(0deg)}
+.valve span:nth-child(2){transform:translate(-50%,-50%) rotate(45deg)}
+.valve span:nth-child(3){transform:translate(-50%,-50%) rotate(90deg)}
+.valve span:nth-child(4){transform:translate(-50%,-50%) rotate(135deg)}
+
+.water-drop{
+  position:absolute;
+  width:20px;
+  height:28px;
+  border-radius:55% 55% 60% 60%;
+  background:linear-gradient(#77eee8,#25bcb6);
+  transform:rotate(45deg);
+  box-shadow:0 0 18px rgba(51,208,200,.4);
+}
+.drop-one{right:17%;top:24%}
+.drop-two{right:12%;top:35%;transform:rotate(45deg) scale(.65)}
+
+.pressure-card{
+  position:absolute;
+  left:8%;
+  right:8%;
+  bottom:25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:16px 18px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:14px;
+  background:rgba(6,20,29,.72);
+  backdrop-filter:blur(10px);
+}
+.pressure-card small{
+  color:#7d91a0;
+  font-size:.6rem;
+  font-weight:900;
+  letter-spacing:.12em;
+}
+.pressure-card strong{
+  color:#fff;
+  font-size:.86rem;
+}
+
+/* Compact trust strip */
+.trust-grid div{
+  padding-top:22px;
+  padding-bottom:22px;
+}
+
+/* Less empty space and stronger service cards */
+#services{
+  padding-top:72px;
+  padding-bottom:82px;
+}
+.services-grid{
+  gap:14px;
+}
+.service{
+  min-height:285px;
+  border:1px solid #dde7eb;
+  border-radius:18px;
+  overflow:hidden;
+}
+.service-symbol{
+  background:#edf7f7;
+  color:#138d89;
+}
+.featured-service{
+  background:linear-gradient(145deg,#0b1b2a,#102f39);
+}
+.featured-service .service-symbol{
+  background:#3ad3cb;
+  color:#07202a;
+}
+.featured-service a{
+  color:#61e1da;
+}
+
+/* Process gets a subtle water tone */
+.process-section{
+  background:
+    radial-gradient(circle at 82% 16%,rgba(51,208,200,.08),transparent 24%),
+    #f2f8f8;
+}
+
+/* Stronger closing section */
+.quote-section{
+  background:
+    radial-gradient(circle at 83% 22%,rgba(51,208,200,.18),transparent 24%),
+    #071522;
+}
+.contact-links>a>span{
+  background:rgba(51,208,200,.12);
+  color:#56ddd7;
+}
+
+/* Teal form focus */
+.quote-form input:focus,
+.quote-form textarea:focus,
+.quote-form select:focus{
+  border-color:#23aaa5;
+  box-shadow:0 0 0 3px rgba(51,208,200,.15);
+}
+
+@media(max-width:680px){
+  .hero-grid{
+    padding-top:48px;
+  }
+  .plumbing-scene{
+    min-height:315px;
+  }
+  .valve{
+    width:82px;
+    height:82px;
+  }
+}
+
+
+/* ======================================================
+   STARTER PLUMBER DEMO — VISUAL POLISH
+   ====================================================== */
+
+:root{
+  --yellow:#33d0c8;
+  --yellow-deep:#139d99;
+}
+
+/* Cleaner, calmer header */
+.site-header{
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(16px);
+}
+.brand-icon{
+  background:linear-gradient(145deg,#3be0d6,#1aa8a3);
+  color:#071826;
+}
+.brand-icon svg{
+  fill:currentColor;
+}
+
+/* No diagonal demo sticker */
+.demo-ribbon{
+  display:none!important;
+}
+
+.starter-badge{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin-bottom:15px;
+  padding:7px 10px;
+  border:1px solid rgba(65,221,211,.25);
+  border-radius:999px;
+  background:rgba(51,208,200,.08);
+  color:#70e4de;
+  font-size:.61rem;
+  font-weight:950;
+  letter-spacing:.12em;
+}
+
+/* Stronger plumbing hero */
+.hero{
+  background:
+    radial-gradient(circle at 82% 24%,rgba(51,208,200,.17),transparent 25%),
+    radial-gradient(circle at 16% 82%,rgba(31,130,167,.14),transparent 27%),
+    #081525;
+}
+.hero-grid{
+  padding:82px 0 80px;
+}
+.hero h1 em{
+  color:#54ded7;
+}
+.availability span{
+  background:#3ad5cd;
+  box-shadow:0 0 0 5px rgba(51,208,200,.10);
+}
+
+.button-yellow{
+  background:#39d4cc;
+  color:#07151e;
+}
+.button-yellow:hover{
+  background:#63e2dc;
+}
+
+/* Plumbing illustration */
+.plumbing-visual-card{
+  border-color:rgba(80,224,216,.18);
+}
+.plumbing-scene{
+  position:relative;
+  min-height:390px;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 72% 30%,rgba(68,223,214,.18),transparent 25%),
+    linear-gradient(145deg,#142d3b,#091622 70%);
+}
+.pipe{
+  position:absolute;
+  background:linear-gradient(180deg,#cdd8de,#7d919c);
+  border:1px solid rgba(255,255,255,.35);
+  box-shadow:0 14px 28px rgba(0,0,0,.22);
+}
+.pipe-main{
+  width:62%;
+  height:34px;
+  left:16%;
+  top:44%;
+  border-radius:18px;
+}
+.pipe-drop{
+  width:34px;
+  height:36%;
+  left:62%;
+  top:44%;
+  border-radius:0 0 18px 18px;
+}
+.pipe-side{
+  width:32%;
+  height:34px;
+  right:-5%;
+  top:64%;
+  border-radius:18px;
+}
+.pipe-joint{
+  position:absolute;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:linear-gradient(145deg,#d9e2e6,#778d99);
+  border:7px solid #aab8c0;
+  box-shadow:0 16px 30px rgba(0,0,0,.25);
+}
+.joint-one{left:58%;top:38%}
+.joint-two{right:24%;top:57%}
+
+.valve{
+  position:absolute;
+  left:24%;
+  top:31%;
+  width:104px;
+  height:104px;
+  border:10px solid #35c9c2;
+  border-radius:50%;
+  box-shadow:0 0 35px rgba(51,208,200,.16);
+}
+.valve span{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:72%;
+  height:8px;
+  border-radius:10px;
+  background:#35c9c2;
+  transform-origin:center;
+}
+.valve span:nth-child(1){transform:translate(-50%,-50%) rotate(0deg)}
+.valve span:nth-child(2){transform:translate(-50%,-50%) rotate(45deg)}
+.valve span:nth-child(3){transform:translate(-50%,-50%) rotate(90deg)}
+.valve span:nth-child(4){transform:translate(-50%,-50%) rotate(135deg)}
+
+.water-drop{
+  position:absolute;
+  width:20px;
+  height:28px;
+  border-radius:55% 55% 60% 60%;
+  background:linear-gradient(#77eee8,#25bcb6);
+  transform:rotate(45deg);
+  box-shadow:0 0 18px rgba(51,208,200,.4);
+}
+.drop-one{right:17%;top:24%}
+.drop-two{right:12%;top:35%;transform:rotate(45deg) scale(.65)}
+
+.pressure-card{
+  position:absolute;
+  left:8%;
+  right:8%;
+  bottom:25px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:16px 18px;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:14px;
+  background:rgba(6,20,29,.72);
+  backdrop-filter:blur(10px);
+}
+.pressure-card small{
+  color:#7d91a0;
+  font-size:.6rem;
+  font-weight:900;
+  letter-spacing:.12em;
+}
+.pressure-card strong{
+  color:#fff;
+  font-size:.86rem;
+}
+
+/* Compact trust strip */
+.trust-grid div{
+  padding-top:22px;
+  padding-bottom:22px;
+}
+
+/* Less empty space and stronger service cards */
+#services{
+  padding-top:72px;
+  padding-bottom:82px;
+}
+.services-grid{
+  gap:14px;
+}
+.service{
+  min-height:285px;
+  border:1px solid #dde7eb;
+  border-radius:18px;
+  overflow:hidden;
+}
+.service-symbol{
+  background:#edf7f7;
+  color:#138d89;
+}
+.featured-service{
+  background:linear-gradient(145deg,#0b1b2a,#102f39);
+}
+.featured-service .service-symbol{
+  background:#3ad3cb;
+  color:#07202a;
+}
+.featured-service a{
+  color:#61e1da;
+}
+
+/* Process gets a subtle water tone */
+.process-section{
+  background:
+    radial-gradient(circle at 82% 16%,rgba(51,208,200,.08),transparent 24%),
+    #f2f8f8;
+}
+
+/* Stronger closing section */
+.quote-section{
+  background:
+    radial-gradient(circle at 83% 22%,rgba(51,208,200,.18),transparent 24%),
+    #071522;
+}
+.contact-links>a>span{
+  background:rgba(51,208,200,.12);
+  color:#56ddd7;
+}
+
+/* Teal form focus */
+.quote-form input:focus,
+.quote-form textarea:focus,
+.quote-form select:focus{
+  border-color:#23aaa5;
+  box-shadow:0 0 0 3px rgba(51,208,200,.15);
+}
+
+@media(max-width:680px){
+  .hero-grid{
+    padding-top:48px;
+  }
+  .plumbing-scene{
+    min-height:315px;
+  }
+  .valve{
+    width:82px;
+    height:82px;
+  }
+}
