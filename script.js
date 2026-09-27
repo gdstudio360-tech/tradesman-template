@@ -91,3 +91,28 @@ if (form) {
     );
   });
 }
+
+
+
+/* Scroll reveal for Starter plumber demo */
+document.addEventListener("DOMContentLoaded", () => {
+  const revealTargets = document.querySelectorAll(
+    ".hero-copy, .hero-visual, .trust-grid div, .services-grid .service, .process-card, .quote-section .section-grid > *"
+  );
+
+  revealTargets.forEach((el) => el.classList.add("reveal-on-scroll"));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -40px 0px"
+  });
+
+  revealTargets.forEach((el) => observer.observe(el));
+});
