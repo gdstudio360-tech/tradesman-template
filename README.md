@@ -33,3 +33,8 @@ This public demo does not send or store form information and does not connect to
 
 GD TradeWeb:
 https://gdtradeweb.co.uk/
+
+
+## Demo photography
+
+This Starter demo uses three Pexels images for presentation purposes. For a real client site, replace these demo images with the client’s own verified job photography where possible.
