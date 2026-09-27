@@ -1,73 +1,48 @@
-# Tradesman Website Template — V2
+# GD TradeWeb — Starter Package Demo
 
-A premium-looking, lightweight static website template aimed at UK tradespeople.
+One-page website demonstration for the GD TradeWeb Starter package.
 
 ## Demo business
-The current content uses the fictional demo business **Northfield Electrical** in Ipswich & Suffolk.
 
-## Included
-- Responsive desktop/mobile layout
-- Sticky navigation
-- Strong hero / CTA section
-- Services
-- Simple customer journey
-- Project showcase
+**Northfield Electrical** is a fictional electrician used only to demonstrate the layout.
+
+## Starter package example
+
+This demo is intentionally simpler than the Business package.
+
+It demonstrates:
+
+- 1-page website
+- Up to 6 core sections
+- Mobile responsive layout
+- Services section
+- Call & WhatsApp buttons
+- Contact / quote section
+- Basic local-business presentation
+- Clear calls to action
+
+## Deliberately not included
+
+These are demonstrated in the Business package instead:
+
+- Project gallery
 - Reviews section
-- Service-area section
-- FAQ
-- Quote form
-- Click-to-call and WhatsApp links
-- LocalBusiness / Electrician structured data
-- No Google Fonts
-- No external JS libraries
+- Dedicated service-area content
+- FAQ section
+- Larger multi-page structure
 
-## Replace before using for a real client
-Search these demo details:
-- `Northfield Electrical`
-- `07700 900123`
-- `+447700900123`
-- `hello@northfieldelectrical.co.uk`
-- `Ipswich`
-- `Suffolk`
+## Demo safety
 
-Also replace:
-- all demo reviews with genuine reviews
-- project artwork with real photos
-- service list with actual services
-- areas covered
-- structured data in `<head>`
-- availability wording
-- any claims such as insurance, memberships, qualifications or ratings with verified client facts
+Northfield Electrical is fictional.
 
-## GitHub Pages update
-Upload `index.html`, `styles.css`, `script.js` and `README.md` to the repository root.
+The public demo:
 
-If files with the same names already exist, commit the replacements. GitHub Pages should redeploy automatically after the commit.
+- is marked `noindex,nofollow`
+- does not send form data
+- does not make real calls
+- does not open a real WhatsApp conversation
+- does not send email
+- uses a demo modal to explain contact actions
 
-## Demo contact behaviour
-This public demo deliberately does **not** send enquiries, make calls, open WhatsApp or launch an email client.
-
-Call / WhatsApp / Email actions and the quote form display a clear demo modal instead.
-The form validates the fields locally, then confirms that no personal details were transmitted or stored.
-
-For a real client, replace the demo contact behaviour with verified client details and a real form handler such as:
-- Formspree
-- Netlify Forms
-- Cloudflare Worker / Pages Functions
-- a custom backend
-
-## Important
-This is a demo template. The yellow **DEMO WEBSITE** ribbon is deliberate. Remove it only after replacing the fictional business content with a real client's verified details.
-
-
-## V3 — Safe public demo
-
-Changes:
-- marked the page `noindex,nofollow` so the fictional electrician is not presented to search engines as a real local business
-- removed fictional Electrician structured data
-- changed title/meta text to identify the site as a demo
-- disabled fake phone, WhatsApp and email actions
-- removed the old `mailto:` quote submission
-- added an accessible demo modal explaining that no enquiry was sent
-- the quote form now validates locally and sends/stores nothing
-- added a direct CTA from the demo to the GD TradeWeb sales website
+GD TradeWeb:
+https://gdtradeweb.co.uk/
