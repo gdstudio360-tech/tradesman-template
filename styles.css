@@ -1985,3 +1985,52 @@ body{
 }
 
 /* END STARTER HERO ALIGNMENT FIX */
+
+
+/* HERO FORCE ALIGNMENT V4 */
+
+.hero.hero-photo-layout .hero-photo-inner{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding-left:clamp(48px,6vw,96px) !important;
+  padding-right:clamp(48px,6vw,96px) !important;
+  box-sizing:border-box;
+}
+
+.hero.hero-photo-layout .hero-photo-copy{
+  width:min(50%,680px) !important;
+}
+
+.hero.hero-photo-layout .hero-template-badge{
+  right:clamp(28px,4vw,70px) !important;
+}
+
+.hero.hero-photo-layout .hero-local-badge{
+  right:clamp(28px,4vw,70px) !important;
+  bottom:72px !important;
+}
+
+@media(max-width:1000px){
+  .hero.hero-photo-layout .hero-photo-inner{
+    padding-left:32px !important;
+    padding-right:32px !important;
+  }
+
+  .hero.hero-photo-layout .hero-photo-copy{
+    width:62% !important;
+  }
+}
+
+@media(max-width:720px){
+  .hero.hero-photo-layout .hero-photo-inner{
+    padding-left:18px !important;
+    padding-right:18px !important;
+  }
+
+  .hero.hero-photo-layout .hero-photo-copy{
+    width:100% !important;
+  }
+}
+
+/* END HERO FORCE ALIGNMENT V4 */
