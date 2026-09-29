@@ -1479,3 +1479,484 @@ body{
   transform:scale(1.055);
 }
 
+
+
+/* STARTER FULL PHOTO HERO START */
+
+.hero.hero-photo-layout{
+  position:relative;
+  min-height:780px;
+  display:flex;
+  align-items:stretch;
+  overflow:hidden;
+
+  background:
+    #071b29
+    url("assets/images/domestic-plumber-hero.png?v=5")
+    center right / cover
+    no-repeat;
+}
+
+
+/* kairinis mėlynas gradientas */
+.hero.hero-photo-layout::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(2,29,47,.99) 0%,
+      rgba(2,32,51,.97) 24%,
+      rgba(3,35,54,.88) 39%,
+      rgba(3,31,47,.60) 51%,
+      rgba(3,25,38,.18) 68%,
+      rgba(3,20,31,.02) 82%
+    );
+}
+
+
+/* apačios gylis */
+.hero.hero-photo-layout::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,0) 58%,
+      rgba(1,21,34,.20) 78%,
+      rgba(1,20,33,.48) 100%
+    );
+
+  pointer-events:none;
+}
+
+
+.hero-photo-inner{
+  position:relative;
+  z-index:2;
+  width:100%;
+  min-height:780px;
+
+  display:flex;
+  align-items:center;
+
+  padding-top:82px;
+  padding-bottom:62px;
+}
+
+
+.hero-photo-copy{
+  width:min(52%, 680px);
+}
+
+
+.hero-trade-label{
+  margin:0 0 24px;
+
+  color:#39ddd6;
+
+  font-size:.78rem;
+  font-weight:900;
+  letter-spacing:.20em;
+}
+
+
+.hero.hero-photo-layout h1{
+  margin:0;
+
+  max-width:690px;
+
+  color:#ffffff;
+
+  font-size:clamp(3.8rem,5.7vw,5.9rem);
+  line-height:.96;
+  letter-spacing:-.055em;
+
+  text-shadow:
+    0 4px 25px rgba(0,0,0,.18);
+}
+
+
+.hero.hero-photo-layout h1 em{
+  display:block;
+  font-style:normal;
+
+  color:#41ddd7;
+}
+
+
+.hero.hero-photo-layout .hero-intro{
+  max-width:610px;
+
+  margin:30px 0 34px;
+
+  color:rgba(232,243,248,.82);
+
+  font-size:1.12rem;
+  line-height:1.65;
+}
+
+
+.hero.hero-photo-layout .hero-actions{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+
+.hero-main-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+
+  padding:17px 26px !important;
+
+  background:#3edbd5 !important;
+  border:1px solid #3edbd5 !important;
+
+  color:#041722 !important;
+
+  box-shadow:
+    0 14px 34px rgba(52,220,213,.17);
+
+  font-weight:900;
+}
+
+
+.hero-main-cta:hover{
+  transform:translateY(-2px);
+
+  background:#53e5df !important;
+}
+
+
+.hero-main-cta span{
+  font-size:1.35rem;
+}
+
+
+.hero-demo-call{
+  display:inline-flex;
+  align-items:center;
+  gap:11px;
+
+  padding:16px 24px !important;
+
+  background:rgba(6,31,49,.46) !important;
+
+  border:
+    1px solid rgba(203,229,239,.34) !important;
+
+  color:white !important;
+
+  backdrop-filter:blur(9px);
+}
+
+
+.hero-demo-call:hover{
+  background:rgba(14,51,70,.74) !important;
+}
+
+
+.hero.hero-photo-layout .hero-proof{
+  max-width:680px;
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:18px;
+
+  margin-top:56px;
+}
+
+
+.hero.hero-photo-layout .hero-proof > div{
+  display:flex;
+  align-items:center;
+  gap:12px;
+
+  padding-top:18px;
+
+  border-top:
+    1px solid rgba(255,255,255,.22);
+}
+
+
+.hero.hero-photo-layout .proof-icon{
+  flex:0 0 38px;
+
+  width:38px;
+  height:38px;
+
+  display:grid;
+  place-items:center;
+
+  border-radius:50%;
+
+  background:
+    rgba(47,218,212,.10);
+
+  border:
+    1px solid rgba(47,218,212,.54);
+
+  color:#39ddd6;
+
+  font-weight:900;
+}
+
+
+.hero.hero-photo-layout .hero-proof strong{
+  color:#fff;
+
+  font-size:.92rem;
+}
+
+
+.hero.hero-photo-layout .hero-proof small{
+  margin-top:4px;
+
+  color:rgba(217,232,239,.65);
+
+  font-size:.76rem;
+}
+
+
+/* viršutinis dešinės badge */
+
+.hero-template-badge{
+  position:absolute;
+
+  top:46px;
+  right:0;
+
+  display:flex;
+  align-items:center;
+  gap:13px;
+
+  min-width:184px;
+
+  padding:15px 18px;
+
+  border:
+    1px solid rgba(255,255,255,.14);
+
+  border-radius:15px;
+
+  background:
+    rgba(7,31,47,.80);
+
+  color:white;
+
+  backdrop-filter:
+    blur(15px);
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.22);
+}
+
+
+.hero-template-icon{
+  font-size:1.5rem;
+
+  color:#86e8e4;
+}
+
+
+.hero-template-badge strong,
+.hero-template-badge small{
+  display:block;
+}
+
+
+.hero-template-badge strong{
+  font-size:.82rem;
+}
+
+
+.hero-template-badge small{
+  margin-top:3px;
+
+  color:#a9bcc8;
+
+  font-size:.62rem;
+
+  letter-spacing:.08em;
+}
+
+
+/* apatinis dešinės badge */
+
+.hero-local-badge{
+  position:absolute;
+
+  right:0;
+  bottom:105px;
+
+  min-width:250px;
+
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+
+  align-items:center;
+  gap:12px;
+
+  padding:17px 18px;
+
+  border:
+    1px solid rgba(255,255,255,.22);
+
+  border-radius:15px;
+
+  background:
+    rgba(6,31,49,.79);
+
+  color:white;
+
+  backdrop-filter:
+    blur(15px);
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.20);
+}
+
+
+.hero-local-dot{
+  width:11px;
+  height:11px;
+
+  border-radius:50%;
+
+  background:#24dda2;
+
+  box-shadow:
+    0 0 12px rgba(36,221,162,.55);
+}
+
+
+.hero-local-badge strong,
+.hero-local-badge small{
+  display:block;
+}
+
+
+.hero-local-badge strong{
+  font-size:.90rem;
+}
+
+
+.hero-local-badge small{
+  margin-top:3px;
+
+  color:#aec0cb;
+
+  font-size:.74rem;
+}
+
+
+.hero-location-icon{
+  color:#9ab1c2;
+}
+
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+  .hero.hero-photo-layout{
+    background-position:63% center;
+  }
+
+  .hero.hero-photo-layout::before{
+    background:
+      linear-gradient(
+        90deg,
+        rgba(2,29,47,.99) 0%,
+        rgba(2,31,49,.96) 38%,
+        rgba(2,29,45,.73) 63%,
+        rgba(2,25,39,.40) 100%
+      );
+  }
+
+  .hero-photo-copy{
+    width:62%;
+  }
+
+  .hero-template-badge,
+  .hero-local-badge{
+    right:22px;
+  }
+}
+
+
+/* MOBILE */
+
+@media(max-width:720px){
+
+  .hero.hero-photo-layout{
+    min-height:auto;
+
+    background-position:65% center;
+  }
+
+  .hero.hero-photo-layout::before{
+    background:
+      linear-gradient(
+        90deg,
+        rgba(2,29,47,.97),
+        rgba(2,29,47,.86)
+      );
+  }
+
+  .hero-photo-inner{
+    min-height:auto;
+
+    padding-top:68px;
+    padding-bottom:48px;
+  }
+
+  .hero-photo-copy{
+    width:100%;
+    max-width:none;
+  }
+
+  .hero.hero-photo-layout h1{
+    max-width:520px;
+
+    font-size:
+      clamp(2.7rem,13vw,4rem);
+  }
+
+  .hero.hero-photo-layout .hero-intro{
+    max-width:520px;
+
+    font-size:1rem;
+  }
+
+  .hero.hero-photo-layout .hero-proof{
+    grid-template-columns:1fr;
+
+    gap:10px;
+
+    margin-top:38px;
+  }
+
+  .hero.hero-photo-layout .hero-proof > div{
+    padding-top:11px;
+  }
+
+  .hero-template-badge,
+  .hero-local-badge{
+    display:none;
+  }
+}
+
+
+/* STARTER FULL PHOTO HERO END */
+
