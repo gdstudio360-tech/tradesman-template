@@ -1960,3 +1960,28 @@ body{
 
 /* STARTER FULL PHOTO HERO END */
 
+
+/* STARTER HERO ALIGNMENT FIX */
+
+.hero.hero-photo-layout .hero-photo-inner{
+  width:min(calc(100% - 120px), var(--max));
+  margin-inline:auto;
+}
+
+.hero.hero-photo-layout .hero-local-badge{
+  bottom:70px;
+}
+
+@media(max-width:1000px){
+  .hero.hero-photo-layout .hero-photo-inner{
+    width:min(calc(100% - 64px), var(--max));
+  }
+}
+
+@media(max-width:720px){
+  .hero.hero-photo-layout .hero-photo-inner{
+    width:min(calc(100% - 32px), var(--max));
+  }
+}
+
+/* END STARTER HERO ALIGNMENT FIX */
