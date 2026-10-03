@@ -1,4 +1,4 @@
-# GD TradeWeb — Starter Package Demo
+# GD Studio 360 — Starter Package Demo
 
 A one-page Starter package demo for a fictional UK plumbing business.
 
@@ -31,8 +31,8 @@ Business-level features such as:
 
 This public demo does not send or store form information and does not connect to a real business.
 
-GD TradeWeb:
-https://gdtradeweb.co.uk/
+GD Studio 360:
+https://gdstudio360.co.uk/
 
 
 ## Demo photography
